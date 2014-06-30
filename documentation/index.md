@@ -1,39 +1,39 @@
-# customiphonecamera Module
+# iPhone Camera View Module
 
 ## Description
 
-TODO: Enter your module description here
+Create a Titanium View with the background image sourced directly from the iPhones camera.
 
-## Accessing the customiphonecamera Module
+## Accessing the Module
 
 To access this module from JavaScript, you would do the following:
 
-	var customiphonecamera = require("pw.custom.iphonecamera");
+	var cameraview = require("pw.custom.iphonecamera");
 
 The customiphonecamera variable is a reference to the Module object.	
 
 ## Reference
 
-TODO: If your module has an API, you should document
-the reference here.
-
-### ___PROJECTNAMEASIDENTIFIER__.function
-
-TODO: This is an example of a module function.
-
-### ___PROJECTNAMEASIDENTIFIER__.property
-
-TODO: This is an example of a module property.
+The cameraview takes the same properties and methods as the standard titanium view.
 
 ## Usage
 
-TODO: Enter your usage example here
+	var win = Ti.UI.createWindow({
+		backgroundColor:'white'
+	});
+	
+	if( Ti.Media.isCameraSupported ) {
+		var cameraview = require("pw.custom.iphonecamera");
+		win.add( cameraview.createView() );
+	}
+	
+	win.open();
 
 ## Author
 
-TODO: Enter your author name, email and other contact
-details you want to share here. 
+Michael Browne
 
-## License
+[@brownemint](http://www.twitter.com/brownemint)
 
-TODO: Enter your license/legal information here.
+## Notes
+Don't forget to check out Jonathon Carter's [CameraView](https://github.com/jonathanrcarter/CameraView) if you'd like the added ability to take pictures! (Who wouldn't!!)
