@@ -2,7 +2,7 @@
 
 ## Description
 
-Create a Titanium View with the background image sourced directly from the iPhones camera.
+Titanium View with the background image sourced directly from the iPhones camera.
 
 ## Accessing the Module
 
